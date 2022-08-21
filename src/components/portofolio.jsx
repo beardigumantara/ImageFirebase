@@ -29,6 +29,11 @@ const Portofolio = () => {
                 <div>
                   <img src={imageUrl} alt="" />
                 </div>
+                <div>
+                  <h3>{title}</h3>
+                  <p>{createdAt.toDate().toDateString()}</p>
+                  <p>{description}</p>
+                </div>
               </div>
             </div>
           );
