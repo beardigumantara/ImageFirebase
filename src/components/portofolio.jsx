@@ -27,7 +27,7 @@ const Portofolio = () => {
             <div key={id}>
               <div className="row">
                 <div>
-                  <img src={imageUrl} alt="" />
+                  <img src={imageUrl} alt={`${imageUrl}`} />
                 </div>
                 <div>
                   <h3>{title}</h3>

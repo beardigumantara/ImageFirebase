@@ -64,7 +64,7 @@ const FormAdd = () => {
           addDoc(portofolioRef, {
             title: formData.title,
             description: formData.description,
-            image: url,
+            imageUrl: url,
             createdAt: Timestamp.now().toDate(),
           })
             .then(() => {
