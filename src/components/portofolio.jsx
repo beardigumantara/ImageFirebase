@@ -1,6 +1,7 @@
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from "../firebase/config";
+import DeletePorto from "./deletePorto";
 
 const Portofolio = () => {
   const [portofolios, setPortofolios] = useState([]);
@@ -33,6 +34,7 @@ const Portofolio = () => {
                   <h3>{title}</h3>
                   <p>{createdAt.toDate().toDateString()}</p>
                   <p>{description}</p>
+                  <DeletePorto id={id} imageUrl={imageUrl}/>
                 </div>
               </div>
             </div>
